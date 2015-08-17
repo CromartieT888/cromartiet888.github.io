@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--By: Joshua Barber-->
+<!--ID: 213092361-->
+<html>
+	<head>
+		<!--Title of the Web Page-->
+		<title>Feedback: Restaurant</title>
+		<!--Link to css stylesheet for app-->
+    	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    	<!--Link to style sheet-->
+    	<!--Reference: http://themeroller.jquerymobile.com/-->
+    	<link rel="stylesheet" href="themes/A1THEME.css" />
+  		<link rel="stylesheet" href="themes/A1THEME.min.css" />
+    	<!--Link to the JQuery Framework-->
+    	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    	<!--Link to the JQuery Mobile Framework-->
+    	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+		<!--Sets up feedback page-->
+    	<div data-role="page" id="feedback" data-theme="d">
+	        <!--Header portion of page-->
+	        <div data-role="header">
+	     		<!--Page Header Title-->
+	            <h1>Feedback</h1>
+	            <!--Navigation Bar for website-->
+	            <nav data-role="navbar"> 
+	                <ul>
+	                    <li>
+	                    	<a href="Home.html" rel="external">Home</a>
+	                    </li> 
+	                    <li>
+	                    	<a href="Menu.html" rel="external">Menu</a>
+	                    </li>
+	                    <li>
+	                    	<a href="Contact.html" rel="external">Find Us</a></li>
+	                    <li>
+	                    	<a href="#" class="ui-btn-active">Feedback</a>
+	                    </li>
+	                    <li>
+	                    	<a href="Developer.html" rel="external">About Developer</a>
+	                    </li> 
+	                </ul>
+            	</nav>
+	        </div>
+	        <!--Main body of page-->
+	        <div data-role="main" class="ui-content">
+	            <h1>Tell Us What You Think</h1>
+	            <!--Feedback form for website-->
+	            <!--Reference: https://api.jquerymobile.com/textinput/-->
+	            <form id="feedbackForm" action="Home.html" method="post">
+	            	<!--Name Field-->
+	            	<div data-role="fieldcontain">
+	            		<label for="name">Name:</label>
+	            		<input type="text" name="name" id="name" value="">
+            		</div>
+            		<!--Phone Field-->
+	            	<div data-role="fieldcontain">
+	            		<label for="phone">Phone:</label>
+	            		<input type="text" name="phone" id="phone" value="">
+            		</div>
+            		<!--Email Field-->
+	            	<div data-role="fieldcontain">
+	            		<label for="email">Email:</label>
+	            		<input type="text" name="email" id="email" value="">
+            		</div>
+            		<!--Feedback Field-->
+            		<div>
+            			<label for="feedback">Feedback:</label>
+						<textarea name="feedback" id="feedback"></textarea>
+            		</div>
+            		<!--Experience Field-->
+            		<div>
+	            		<label for="experience">Your Experience:</label> 
+	                    <select id="experience" name="experience">
+	                        <option value="Neutral">Neutral</option>
+	                        <option value="Very Unsatisfied">Very Unsatisfied</option> 
+	                        <option value="Unsatisfied">Unsatisfied</option>
+	                        <option value="Satisfied">Satisfied</option>
+	                        <option value="Very Satisfied">Very Satisfied</option>
+	                    </select> 
+					</div>
+					<!--Question Field-->
+					<div>
+						<fieldset data-role="controlgroup" data-type="horizontal">
+							<legend>Returning Customer?</legend>
+							<input type="radio" name="radio-return" id="radYes"> 
+	                        <label for="radYes">Yes</label>
+	                        <input type="radio" name="radio-return" id="radNo">
+	                        <label for="radNo">No</label>
+                        </fieldset>
+					</div>
+	            </form>
+	            <!--Submit Buttons-->
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-delete ui-btn-icon-top" rel="external">Cancel</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-check ui-btn-icon-top" rel="external">Submit</a>
+	        </div>
+	        <!--Footer portion of the page-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+	</body>
+</html>

@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<!--By: Joshua Barber-->
+<!--ID: 213092361-->
+<html>
+	<head>
+		<!--Title of the Web Page-->
+		<title>Menu: Restaurant</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<!--Link to css stylesheet for app-->
+    	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    	<!--Link to style sheet-->
+    	<!--Reference: http://themeroller.jquerymobile.com/-->
+    	<link rel="stylesheet" href="themes/A1THEME.css" />
+  		<link rel="stylesheet" href="themes/A1THEME.min.css" />
+    	<!--Link to the JQuery Framework-->
+    	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    	<!--Link to the JQuery Mobile Framework-->
+    	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+		<!--Sets up page-->
+    	<div data-role="page" id="menu" data-theme="d">
+	        <!--Header portion of page-->
+	        <div data-role="header">
+	     		<!--Page Header Title-->
+	            <h1>Menu</h1>
+	            <!--Navigation Bar for website-->
+	            <nav data-role="navbar"> 
+	                <ul>
+	                    <li>
+	                    	<a href="Home.html" rel="external">Home</a>
+	                    </li> 
+	                    <li>
+	                    	<a href="#" class="ui-btn-active">Menu</a>
+	                    </li>
+	                    <li>
+	                    	<a href="Contact.html" rel="external">Find Us</a></li>
+	                    <li>
+	                    	<a href="Feedback.html" rel="external">Feedback</a>
+	                    </li>
+	                    <li>
+	                    	<a href="Developer.html" rel="external">About Developer</a>
+	                    </li> 
+	                </ul>
+            	</nav>
+	        </div>
+	        <!--Main body of page-->
+	        <div data-role="main" class="ui-content">
+	        	<!--List of menu Items-->
+	        	<!--Done as multiple collapsible lists-->
+	        	<!--Div containing all the lists-->
+	        	<!--Reference: http://demos.jquerymobile.com/1.4.0/filterable/#ui-page-top-->
+	        	<!--Define Search Form-->
+	        	<form>
+				    <input data-type="search" id="searchForCollapsibleSetChildren">
+				</form>
+				<!--Define set to contain multiple collapsible lists-->
+	        	<div data-role="collapsible-set" data-filter="true" data-children="> 
+	        		div, > div div ul li" data-inset="true" id="collapsiblesetForFilterChildren" 
+	        		data-input="#searchForCollapsibleSetChildren">
+	        			<!--Sub Collapsible Set cotaining a section of the menu-->
+				        <div data-role="collapsible" 
+			          		data-filtertext="Prawn Cutlets Crab Claws Chicken Wings Garlic Bread Nachos">
+					        	<!--Heading of list-->
+					        	<h4>Entrée
+					        		<!--Number of elements in the list-->
+					    			<span class="ui-li-count">5</span>
+					        	</h4>
+					        	<!--Sets up food list as an unordered list-->
+							    <ul data-role="listview" data-inset="true">
+							    	<!--Filter text for search bar in list tag-->
+					      			<li data-filtertext="Prawn Cutlets">
+					      				<!--Food title-->
+						      			<a href="#entree_prawn_cutlets">
+						      				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Deanna Roberts-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=50244&picture=fried-prawns-->
+						      				<img src="images/prawncutlets.jpg" class="ui-li-thumbnail">
+						      				Prawn Cutlets
+						      				<!--Food price-->
+						      				<span class="ui-li-count">$4.00</span>
+						      			</a>
+						      		</li>
+							      	<li data-filtertext="Crab Claws">
+							      		<a href="#entree_crab_claws">
+							      			<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Maliz Ong-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=47631&picture=saute-crab-->
+							      			<img src="images/crabclaws.jpg" class="ui-li-thumbnail">
+							      			Crab Claws
+							      			<span class="ui-li-count">$7.50</span>
+							      		</a>
+							      	</li>
+						      		<li data-filtertext="Chicken Wings">
+						      			<a href="#entree_chicken_wings">
+						      				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Alex Borland-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=120301&picture=chicken-on-the-barbecue-->
+						      				<img src="images/chickenwings.jpg" class="ui-li-thumbnail">
+						      				Chicken Wings
+						      				<span class="ui-li-count">$3.50</span>
+						      			</a>
+						      		</li>
+						      		<li data-filtertext="Garlic Bread">
+						      			<a href="#entree_garlic_bread">
+						      				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Alex Borland-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=120303&picture=bread-with-cheese-and-tomato-->
+						      				<img src="images/garlicbread.jpg" class="ui-li-thumbnail">
+						      				Garlic Bread
+						      				<span class="ui-li-count">$4.50</span>
+						      			</a>
+						      		</li>
+						      		<li data-filtertext="Nachos">
+						      			<a href="#entree_nachos">
+						      				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Lorraine Morris-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=42875&picture=nachos-cheese-jalapeno-salsa-->
+						      				<img src="images/nachos.jpg" class="ui-li-thumbnail">
+						      				Nachos
+						      				<span class="ui-li-count">$6.50</span>
+						      			</a>
+						      		</li>
+							    </ul>
+				        </div>
+				        <!--Sub Collapsible Set cotaining a section of the menu-->
+				        <div data-role="collapsible" 
+			          		data-filtertext="Steak Parma Salmon Burger With The Lot">
+					        	<!--Heading of list-->
+					        	<h4>Main
+					        		<!--Number of elements in the list-->
+					    			<span class="ui-li-count">4</span>
+					        	</h4>
+					        	<!--Sets up food list as an unordered list-->
+							    <ul data-role="listview" data-inset="true">
+							    	<!--Filter text for search bar in list tag-->
+							      	<li data-filtertext="Steak">
+						       			<a href="#main_steak">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Petr Kratochvil-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=10637&picture=fries-and-steak-on-plate-->
+						       				<img src="images/steak.jpg" class="ui-li-thumbnail">
+						       				Steak
+						       				<span class="ui-li-count">$20.00</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Parma">
+						       			<a href="#main_parma">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Lynn Greyling-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=76738&picture=meat-patty-meal-->
+						       				<img src="images/parma.jpg" class="ui-li-thumbnail">
+						       				Parma
+						       				<span class="ui-li-count">$15.00</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Salmon">
+						       			<a href="#main_salmon">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Vera Kratochvil-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=8619&picture=fried-trout-->
+						       				<img src="images/salmon.jpg" class="ui-li-thumbnail">
+						       				Salmon
+						       				<span class="ui-li-count">$18.00</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Burger With The Lot">
+						       			<a href="#main_burger_with_the_lot">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Cristie Guevara-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=100588&picture=cheeseburger-and-fries-->
+						       				<img src="images/burgerwiththelot.jpg" class="ui-li-thumbnail">
+						       				Burger With The Lot
+						       				<span class="ui-li-count">$11.00</span>
+						       			</a>
+						       		</li>
+							    </ul>
+				        </div>
+				        <!--Sub Collapsible Set cotaining a section of the menu-->
+				        <div data-role="collapsible" 
+			          		data-filtertext="Coke Pepsi Ginger Ale Lemon Squash Water Fanta Creamy Soda">
+	          					<h4>Drinks
+							    	<span class="ui-li-count">7</span>
+							    </h4>
+							    <ul data-role="listview" data-inset="true">
+						       		<li data-filtertext="Coke">
+						       			<a href="#drink_coke">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: S Dusseault-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=42530&picture=cola-and-ice-->
+						       				<img src="images/cola.jpg" class="ui-li-thumbnail">
+						       				Coke
+						       				<span class="ui-li-count">$2.00</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Pepsi">
+						       			<a href="#drink_pepsi">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: S Dusseault-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=42530&picture=cola-and-ice-->
+						       				<img src="images/cola.jpg" class="ui-li-thumbnail">
+						       				Pepsi
+						       				<span class="ui-li-count">$2.00</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Ginger Ale">
+						       			<a href="#drink_ginger_ale">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Jack Sparrow-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=56343&picture=two-beers-->
+						       				<img src="images/gingerale.jpg" class="ui-li-thumbnail">
+						       				Ginger Ale
+						       				<span class="ui-li-count">$2.00</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Lemon Squash">
+						       			<a href="#drink_lemon_squash">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Anna Langova-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=803&picture=drink-->
+						       				<img src="images/lemonsquash.jpg" class="ui-li-thumbnail">
+						       				Lemon Squash
+						       				<span class="ui-li-count">$2.00</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Water">
+						       			<a href="#drink_water">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Maliz Ong-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=110111&picture=water-in-a-glass-->
+						       				<img src="images/water.jpg" class="ui-li-thumbnail">
+						       				Water
+						       				<span class="ui-li-count">Free</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Fanta">
+						       			<a href="#drink_fanta">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Cristie Guevara-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=100582&picture=mimosa-->
+						       				<img src="images/fanta.jpg" class="ui-li-thumbnail">
+						       				Fanta
+						       				<span class="ui-li-count">$2.00</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Creamy Soda">
+						       			<a href="#drink_creamy_soda">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Cristie Guevara-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=101541&picture=bloody-mary-->
+						       				<img src="images/creamysoda.jpg" class="ui-li-thumbnail">
+						       				Creamy Soda
+						       				<span class="ui-li-count">$2.00</span>
+						       			</a>
+						       		</li>
+							    </ul>
+				        </div>
+				        <!--Sub Collapsible Set cotaining a section of the menu-->
+				        <div data-role="collapsible" 
+			          		data-filtertext="Beer Cider Wine">
+			          			<h4>Alcohol
+							    	<span class="ui-li-count">3</span>
+							    </h4>
+							    <ul data-role="listview" data-inset="true">
+						       		<li data-filtertext="Beer">
+						       			<a href="#alcohol_beer">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: George Hodan-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=27389&picture=beer-->
+						       				<img src="images/beer.jpg" class="ui-li-thumbnail">
+						       				Beer
+						       				<span class="ui-li-count">$6.00</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Cider">
+						       			<a href="#alcohol_cider">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Cristie Guevara-->
+						      				<!--Link: http://www.publicdomainpictures.net/view-image.php?
+						      					image=100653&picture=glass-of-beer-->
+						       				<img src="images/cider.jpg" class="ui-li-thumbnail">
+						       				Cider
+						       				<span class="ui-li-count">$6.00</span>
+						       			</a>
+						       		</li>
+						       		<li data-filtertext="Wine">
+						       			<a href="#alcohol_wine">
+						       				<!--Thumbnail of food-->
+						      				<!--Image Reference-->
+						      				<!--Author: Petr Kratochvil-->
+						      				<!--Link: http://www.publicdomainpictures.net/
+						      					view-image.php?image=2015&picture=white-and-red-wine-->
+						       				<img src="images/wine.jpg" class="ui-li-thumbnail">
+						       				Wine
+						       				<span class="ui-li-count">$5.00</span>
+						       			</a>
+						       		</li>
+							    </ul>
+				        </div>
+        		</div>
+	        </div>
+	        <!--Footer portion of the page-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="entree_prawn_cutlets" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Prawn Cutlets</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/prawncutlets.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_pc" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>500kj</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Saturated:</th>
+	            			<td>5g</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Total:</th>
+	            			<td>10g</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Comes as a single piece, crispy prawns in a tempura batter 
+            		with various sauces available.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="entree_crab_claws" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Crab Claws</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/crabclaws.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_cc" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>700kj</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Saturated:</th>
+	            			<td>15g</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Total:</th>
+	            			<td>25g</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Comes in two pieces, claws wrapped into a ball with a crumbed batter.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="entree_chicken_wings" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Chicken Wings</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/chickenwings.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_cw" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>1100kj</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Saturated:</th>
+	            			<td>15g</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Total:</th>
+	            			<td>30g</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Comes in two pieces, crispy chicken wings mixed with herbs and spices.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="entree_garlic_bread" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Garlic Bread</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/garlicbread.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_gb" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>400kj</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Saturated:</th>
+	            			<td>7g</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Total:</th>
+	            			<td>10g</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Cheesy garlic bread covered in mozzarella and topped with herbs.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="entree_nachos" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Nachos</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/nachos.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_n" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>800kj</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Saturated:</th>
+	            			<td>15g</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Total:</th>
+	            			<td>20g</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Crunchy corn chips covered in salsa and cheese with sour cream and guacamole.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="main_steak" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Steak</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/steak.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_s" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>2000kj</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Saturated:</th>
+	            			<td>5g</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Total:</th>
+	            			<td>20g</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Your choice of steak served with a side of chips, vegetables or salad.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="main_parma" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Parma</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/parma.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_pa" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>1700kj</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Saturated:</th>
+	            			<td>15g</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Total:</th>
+	            			<td>25g</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Classic Chicken Schnitzel topped with sauce and cheese.
+            		Served with a side of chips, vegetables or salad.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="main_salmon" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Salmon</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/salmon.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_salmon" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>1500kj</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Saturated:</th>
+	            			<td>2g</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Total:</th>
+	            			<td>5g</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Freshly caught Tasmanian salmon grilled and
+            		served with a side of chips, vegetables or salad.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="main_burger_with_the_lot" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Burger With The Lot</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/burgerwiththelot.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_bwtl" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>2100kj</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Saturated:</th>
+	            			<td>20g</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Fat-Total:</th>
+	            			<td>40g</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Classic burger with everything packed in, server with
+            		a side of chips, vegetables or salad.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="drink_coke" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Coke</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/cola.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_coke" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>100kj</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Coke, served with or without ice.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="drink_pepsi" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Pepsi</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/cola.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_pepsi" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>110kj</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Pepsi, served with or without ice.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="drink_ginger_ale" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Ginger Ale</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/gingerale.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_gingerale" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>95kj</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Ginger Ale, served with or without ice.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="drink_lemon_squash" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Lemon Squash</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/lemonsquash.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_lemonsquash" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>85kj</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Lemon Squash, served with or without ice.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="drink_water" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Water</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/water.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_water" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>0kj</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Complimentary water served in a jug with ice.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="drink_fanta" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Fanta</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/fanta.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_fanta" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>105kj</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Fanta, served with or without ice.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="drink_creamy_soda" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Creamy Soda</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/creamysoda.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_cs" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>115kj</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Creamy Soda, served with or without ice.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="alcohol_beer" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Beer</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/beer.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_beer" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>200kj</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Standard Drinks:</th>
+	            			<td>1.5</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Available in various brands, served in a bottle or pint.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="alcohol_cider" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Cider</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/cider.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_cider" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>250kj</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Standard Drinks:</th>
+	            			<td>1.2</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Available in various brands, served in a bottle or pint.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+    	<!--Sets up food page-->
+    	<div data-role="page" id="alcohol_wine" data-theme="d">
+    		<!--Page Header Section-->
+	        <div data-role="header">
+	        	<!--Back Button for Page-->
+	        	<a href="#menu" class="ui-button" data-icon="carat-l">
+	        		Back
+	     		</a>	
+	     		<!--Page Title-->
+	            <h1>Wine</h1>
+	        </div>
+	        <!--Page Main Section-->
+	        <div data-role="main" class="ui-content">
+	            <h1>About</h1>
+	            <!--Preview Picture-->
+	            <img src="images/wine.jpg"  width="60%" height="200px">
+	            <!--Table of Nutrition Information-->
+	            <h2>Nutrition Information</h2>
+	        	<table data-role="table" id="nut_info_wine" class="ui-responsive">
+	        		<thead>
+	        			<tr>
+	            			<th>Title</th>
+	            			<th>Details</th>
+	            		</tr>
+	        		</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Energy:</th>
+	            			<td>200kj</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Standard Drinks:</th>
+	            			<td>0.9</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<!--Food Description-->
+            	<h2>Description</h2>
+            	<h5>
+            		Available in various brands, served in a bottle or glass.
+            	</h5>
+            	<!--Order butons for food-->
+            	<a href="Home.html" 
+            		class="ui-btn ui-icon-shop ui-btn-icon-top" rel="external">Add to Order</a>
+				<a href="Home.html" 
+            		class="ui-btn ui-icon-arrow-r ui-btn-icon-top" rel="external">Buy Now</a>
+	        </div>
+	        <!--Page Footer Section-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+	</body>
+</html>

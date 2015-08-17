@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--By: Joshua Barber-->
+<!--ID: 213092361-->
+<html>
+	<head>
+		<!--Title of the Web Page-->
+		<title>Home: Restaurant</title>
+		<!--Link to css stylesheet for app-->
+    	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    	<!--Link to style sheet-->
+    	<!--Reference: http://themeroller.jquerymobile.com/-->
+    	<link rel="stylesheet" href="themes/A1THEME.css" />
+  		<link rel="stylesheet" href="themes/A1THEME.min.css" />
+    	<!--Link to the JQuery Framework-->
+    	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    	<!--Link to the JQuery Mobile Framework-->
+    	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+		<!--Sets up application page-->
+    	<div data-role="page" id="home" data-theme="d">
+	        <!--Header portion of page-->
+	        <div data-role="header">
+	            <h1>Home Page</h1>
+	            <!--Navigation Bar for website-->
+	            <nav data-role="navbar"> 
+	                <ul>
+	                    <li>
+	                    	<a href="#" class="ui-btn-active">Home</a>
+	                    </li> 
+	                    <li>
+	                    	<a href="Menu.html" rel="external">Menu</a>
+	                    </li>
+	                    <li>
+	                    	<a href="Contact.html" rel="external">Find Us</a></li>
+	                    <li>
+	                    	<a href="Feedback.html" rel="external">Feedback</a>
+	                    </li>
+	                    <li>
+	                    	<a href="Developer.html" rel="external">About Developer</a>
+	                    </li> 
+	                </ul>
+            	</nav>
+	        </div>
+	        <!--Main body of page-->
+	        <div data-role="main" class="ui-content">
+	            <h1>Welcome to the Restaurant</h1>
+	            <p>Dig In</p>
+	            <!--Buttons for Website-->
+	            <div>
+		            <a href="Menu.html" 
+		            	class="ui-btn ui-btn-inline ui-icon-shop ui-btn-icon-top" rel="external">Order</a>
+		            <a href="Contact.html" 
+		            	class="ui-btn ui-btn-inline ui-icon-location ui-btn-icon-top" rel="external">Location</a>
+	            	<!--Click to call function-->
+	            	<!--Reference: http://www.mobilexweb.com/blog/click-to-call-links-mobile-browsers-->
+	            	<a href="tel:+61397581818" 
+		            	class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-top">Phone</a>
+		            <a href="Feedback.html" 
+		            	class="ui-btn ui-btn-inline ui-icon-star ui-btn-icon-top" rel="external">Review</a>
+		            <a href="Developer.html" 
+		            	class="ui-btn ui-btn-inline ui-icon-info ui-btn-icon-top" rel="external">About</a>
+	            </div>
+	            <!--Table for trading hours-->
+	            <!--Reference: http://demos.jquerymobile.com/1.4.5/table-reflow/#&ui-state=dialog-->
+	            <h2>Our Trading Hours</h2>
+	            <table data-role="table" id="trading hours" class="ui-responsive">
+	            	<thead>
+	            		<th>Day</th>
+	            		<th>Open</th>
+	            		<th>Close</th>
+	            	</thead>
+	            	<tbody>
+	            		<tr>
+	            			<th>Monday</th>
+	            			<td>Closed</td>
+	            			<td>Closed</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Tuesday</th>
+	            			<td>10:00am</td>
+	            			<td>9:00pm</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Wednesday</th>
+	            			<td>10:00am</td>
+	            			<td>9:00pm</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Thursday</th>
+	            			<td>10:00am</td>
+	            			<td>9:00pm</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Friday</th>
+	            			<td>10:00am</td>
+	            			<td>9:00pm</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Saturday</th>
+	            			<td>10:00am</td>
+	            			<td>9:00pm</td>
+	            		</tr>
+	            		<tr>
+	            			<th>Sunday</th>
+	            			<td>10:00am</td>
+	            			<td>9:00pm</td>
+	            		</tr>
+	            	</tbody>
+            	</table>
+            	<p><b>Disclaimer: </b>Any similarities to real restaurants is purely coincidental. 
+        			This web site is for educational purposes only.
+        		</p>
+	        </div>
+	        <!--Footer portion of the page-->
+	        <div data-role="footer">
+	            <h2>&copy; Joshua Barber 2015</h2>
+	        </div>
+    	</div>
+	</body>
+</html>
